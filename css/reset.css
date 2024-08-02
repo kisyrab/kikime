@@ -1,0 +1,8 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul, li{list-style: none;}
+a{text-decoration: none; color: inherit; display: inline-block;}
+
+/* body{font-family: "고딕";} */
+table{border-collapse: collapse;}
+img{vertical-align: bottom;}
