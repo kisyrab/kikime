@@ -65,13 +65,16 @@ body{background-color: #000; color: #fff; overflow-x: hidden; /* overflow-y: hid
 .section01{
     display: none;
     position: absolute;
-    top: 100px; left: 151px;
+    top: 100px; left: 150px;
     border: 10px solid #FDF240; box-shadow: 0 0 30px #FDF240;
+    margin: 80px auto;
+
 }
 
 .s1_inner>.img_box{ overflow: hidden;}
 
-.s1_inner{border: 1px solid snow;
+.s1_inner{
+    border: 1px solid snow;
     height: 100%;
     padding-top: 70px; display: flex; justify-content: center; text-align: center;}
     
@@ -94,26 +97,29 @@ body{background-color: #000; color: #fff; overflow-x: hidden; /* overflow-y: hid
     .section01_box_img_2{background: url(../images/intro2.png);}
     .section01_box_img_3{background: url(../images/intro3.png);}
     .section01_box_img_4{background: url(../images/intro4.png);}
+    
 .section01_inner_2, .section01_inner_2, .section01_inner_3, .section01_inner_4{display: none;}
 
-/* /////////////////////////.section02////////////////////// */
+/* /////////////////////////.section02 제품소개////////////////////// */
+/* /////////////////////////.section02 제품소개////////////////////// */
+/* /////////////////////////.section02 제품소개////////////////////// */
+/* /////////////////////////.section02 제품소개////////////////////// */
 
 .section02{
-    /* display: none; */
+    display: none;
     border: 10px solid #7FFE00; box-shadow: 0 0 30px #7FFE00;
 }
-.section02_inner_1{width: 100%; height: 100%; border: 1px solid red; display: none !important; }
+.section02_inner_1{width: 100%; height: 100%; display: none !important; }
 .s2_inner{    
     width: 100%; height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid blue; */
+    /* border: 1px solid #fff; */
 }
 .s2_inner .img_box2{
     overflow: hidden;
     width: 100%; height: 400px;
-    /* border: 1px solid hotpink; */
     /* display: flex; justify-content: space-around; text-align: center; */
 }
 /* .s2_img_box{transition: all 0.3s;} */
@@ -122,10 +128,8 @@ body{background-color: #000; color: #fff; overflow-x: hidden; /* overflow-y: hid
 .img_box2 .s2_img_box:hover a{transform: scale(1.1);}
 
 .section02_inner_1 .img_box2 div{
-    height: 400px;
+    height: 400px; margin-right: 10px;
     /* border: 1px solid black; */
-    margin-right: 10px;
-
 }
 
 .section02_inner_1 .img_box2 div a{
@@ -136,7 +140,7 @@ body{background-color: #000; color: #fff; overflow-x: hidden; /* overflow-y: hid
     background-repeat: no-repeat;
     text-indent: -9999px;
 }
-
+/* 슬릭사진 */
 .section02_inner_1 .img_box2 div.s2_img_1 a{background-image: url(../images/s2_1.png);}
 .section02_inner_1 .img_box2 div.s2_img_2 a{background-image: url(../images/s2_2.png);}
 .section02_inner_1 .img_box2 div.s2_img_3 a{background-image: url(../images/s2_3.png);}
@@ -145,23 +149,114 @@ body{background-color: #000; color: #fff; overflow-x: hidden; /* overflow-y: hid
 .section02_inner_1 .img_box2 div.s2_img_6 a{background-image: url(../images/s2_6.png);}
 
 
-
-.section01_inner_2{
-    position: absolute; top: 0; left: 0;}
+/* 동그라미사진-1 */
+.s2_inner.section02_inner_2{
+    position: absolute; top: 0; left: 0; 
+    width: 100%; height: 100%;
+    display: none; 
+}
 .s2_t{
     /* border: 1px solid #fff;  */
     position: absolute;
     top: 20px; left: 30px;
     font-size: 3rem;
 }
-.s2_imgbox{display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 20px; }
-.s2_imgbox li{}
-.s2_imgbox li a{}
-.s2_imgbox li a img{transition: all 0.3s;}
+.s2_inner .s2_imgbox{
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; 
+    width: 80%; height: 500px;
+    /* border: 1px solid red;  */
+}
+.s2_imgbox li{width: 100%;}
+.s2_imgbox li a{display: block; width: 100%;}
+.s2_imgbox li a img{transition: all 0.3s; width: 100%;}
 .s2_imgbox li a:hover img{transform: scale(1.1);}
 
+/* 동그라미사진-2~5 */
+.s2_inner.section02_inner_3{
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; ;
+    display: none;
+    }
+    .s2_inner .s2_imgbox3{
+        display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; 
+        width: 80%; height: 500px;
+        
+    }
+.s2_imgbox3 li{width: 100%; height: 100%;} 
+.s2_imgbox3 li a{display: block; width: 100%; height: 100%;}
+.s2_imgbox3 li a img{width: 100%; transition: all 0.3s; height: 100%;}
+.s2_imgbox3 li a:hover img{transform: scale(1.1);}
 
-.section01_inner_3{
-    position: absolute; top: 0; left: 0;}
+.s2_inner.section02_inner_4{
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; ;
+    display: none;
+    }
+
+.s2_inner.section02_inner_5{
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; ;
+    display: none;
+    }
+    
+/* ///////////////////////////섹션 3 매장안내//////////////////// */
+/* ///////////////////////////섹션 3 매장안내//////////////////// */
+/* ///////////////////////////섹션 3 매장안내//////////////////// */ 
+
+.section03{
+    display: none;
+    border: 10px solid #FB31DB; box-shadow: 0 0 30px #FB31DB;
+}
+
+.s3_inner{
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+.s3_box_img{
+    background: url("../images/section03_01.png") no-repeat;
+    background-size: cover;
+    width: 935px; height: 625px;
+    /* border: 1px solid red; */
+    transition: all 0.3s;
+}
+.section03>.s3_inner>.img_box{
+    margin-left: 30px;
+    width: 935px; height: 625px;
+    overflow: hidden; 
+    /* border: 1px solid rgb(221, 162, 221); */
+}
+.section03>.s3_inner>.img_box:hover>.s3_box_img{transform: scale(1.1);}
+
+.s3_box_text{
+    /* border: 1px solid yellow; */
+    text-align: right;
+    padding-top: 40px;
+    padding-right: 30px;
+    letter-spacing: 1px;
+}
+.s3_t{
+    /* border: 1px solid red; */
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.s3_p{
+    /* border: 1px solid red; */
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.s3_p:hover{text-decoration: underline;}
+.s3_QRcode{
+    /* border: 1px solid red; */
+    background: url("../images/qrcode.png") center;
+    width: 292px; height: 292px;
+    margin-top: 200px;
+    margin-left: auto;
+}
+
+.s3_img2{background: url("../images/section03_02.png");}
+.s3_img3{background: url("../images/section03_03.png");}
+.s3_img4{background: url("../images/section03_04.png");}
 
 
+
+.section04{
+    /* display: none; */
+    border: 10px solid #0310EA; box-shadow: 0 0 30px #0310EA;
+}
