@@ -255,8 +255,142 @@ body{background-color: #000; color: #fff; overflow-x: hidden; /* overflow-y: hid
 .s3_img4{background: url("../images/section03_04.png");}
 
 
+/* //////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////section 4//////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////// */
 
 .section04{
     /* display: none; */
     border: 10px solid #0310EA; box-shadow: 0 0 30px #0310EA;
 }
+
+.s4_inner{}
+
+.s4_box_text_spa{
+    /* border: 1px solid yellow; */
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 30px;
+    line-height: 1.5;
+    /* padding-bottom: 0; */
+}
+.s4_t_spa{}
+.s4_p_spa{font-size: 1.7rem;}
+
+.img_box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+.s4_box_img_spa1_outer{overflow: hidden;}
+.s4_inner1>.img_box>.s4_box_img_spa1_outer:hover>.s4_box_img_spa1{transform: scale(1.1);}
+
+.s4_box_img_spa1{
+    background: url("../images/spa_into1.png") no-repeat;
+    width: 863px; height: 482px;
+    transition: all 0.3s;
+}
+.s4_box_img_spa2{
+    display: flex;
+    flex-direction: column;
+}
+.s4_box_img_spa2_1_outer{overflow: hidden;}
+.s4_box_img_spa2_1{
+    background: url("../images/spa_intro2.png") no-repeat;
+    width: 577px; height: 230px;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+.s4_inner1>.img_box>.s4_box_img_spa2>.s4_box_img_spa2_1_outer:hover>.s4_box_img_spa2_1{transform: scale(1.1);}
+.s4_box_img_spa2_2_outer{overflow: hidden;}
+.s4_box_img_spa2_2{
+    background: url("../images/spa_intro3.png") no-repeat;
+    width: 577px; height: 230px;
+    transition: all 0.3s;
+}
+.s4_inner1>.img_box>.s4_box_img_spa2:hover>.s4_box_img_spa2_2_outer:hover>.s4_box_img_spa2_2{transform: scale(1.1);}
+
+
+.s4_inner2{
+    width: 1600px; height: 710px;
+    border: 1px solid red;
+    position: relative;
+}
+.s4_2_bg_img{
+    background: url("../images/spa_bg1.png") no-repeat;
+    width: 1454px; height: 645px;
+    position: absolute;
+    top: 30px; left: 70px;
+    opacity: 1;
+}
+.s4_2_text{
+    position: absolute;
+    top: 50px; left: 100px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.s4_2_text .s4_2_t{}
+.s4_2_text .s4_2_p1{font-size: 1.5rem; transition: all 0.3s;}
+.s4_2_text .s4_2_p2{font-size: 1rem;}
+.s4_2_text:hover .s4_2_p1{font-size: 2rem;}
+
+
+.s4_inner3{
+    position: relative; width: 1600px; height: 710px;
+    border: 1px solid red;
+}
+.s4_3_bg_img{background: url("../images/spa_bg2.png") no-repeat;
+    width: 1454px; height: 645px;
+    position: absolute;
+    top: 30px; left: 70px;
+    opacity: 1;}
+
+.s4_3_text{
+    position: absolute;
+    top: 470px; left: 100px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.s4_3_text .s4_3_t{}
+.s4_3_text .s4_3_p1{font-size: 1.5rem; transition: all 0.3s;}
+.s4_3_text .s4_3_p2{font-size: 1rem;}
+.s4_3_text:hover .s4_3_p1{font-size: 2rem;}
+
+.s4_inner4{display: flex; align-items: center; justify-content: space-around; border: 1px solid red; width: 1600px; height: 710px;}
+.s4_spa_text{font-size: 1.6rem; line-height: 1.5;}
+.s4_spa_text .s4_spa_title{}
+.s4_spa_text .s4_spa_subtitle{font-size: 1.6rem;}
+.s4_spa_text .s4_spa_p1{margin-top: 20px; font-size: 1.2rem;}
+.s4_spa_text .s4_spa_p2{margin-top: 20px; font-size: 1.2rem;}
+
+.s4_spa_img_outer{overflow: hidden;
+    width: 807px; height: 605px;
+    /* border: 1px solid red; */
+}
+.s4_spa_img{
+    transition: all 0.3s;
+    background: url("../images/spa1.png") no-repeat center;
+    background-size: 110%;
+    width: 807px; height: 605px;
+}
+.s4_spa_img_outer .s4_spa_img:hover{transform: scale(1.1);}
+
+.s4_spa_img2{
+    background: url("../images/spa2.png") no-repeat center;
+    background-size: 110%;
+}
+
+.s4_spa_img3{
+    background: url("../images/spa3.png") no-repeat center;
+    background-size: 110%;
+}
+
+
