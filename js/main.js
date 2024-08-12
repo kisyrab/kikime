@@ -25,12 +25,13 @@ $(function(){
     bg = $(".tab li").eq(0).attr("bg")
     $(".tab li").eq(0).css({"background" : bg })
 
+    var i;
 
     $(".tab li").click(function(){
         bg = $(this).attr("bg")
         $(this).siblings().find("a").addClass("on");
         $(this).find("a").removeClass("on");
-        var i = $(this).index()
+        i = $(this).index()
         console.log(i)
         $(".frame .section").hide();
         // $(".frame .section").eq(i).css({display : "flex"})
@@ -40,13 +41,13 @@ $(function(){
     })
 
 
-    $(".tab li").hover(function(){
+    $(".tab li").mouseover(function(){
         var bg = $(this).attr("bg");
         $(this).css({"background" : bg })
-    }, function(){
-        $(this).siblings().css({"background" : "transparent" })
-        
-    })//hover
+    })
+    $(".tab li").mouseout(function(){
+        $(".tab li").eq(i).siblings().css({"background" : "transparent" })
+    })
 
 
 })//j
